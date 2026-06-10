@@ -674,11 +674,11 @@ class Project extends HXProject
     if (isMobile())
     {
       this.window.orientation = Orientation.LANDSCAPE;
-      this.window.fullscreen = true;
+      this.window.fullscreen = false;
       this.window.resizable = false;
       this.window.borderless = true;
-      this.window.width = 0;
-      this.window.height = 0;
+      this.window.width = 1280;
+      this.window.height = 720;
     }
 
     if (isAndroid())
