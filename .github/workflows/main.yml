@@ -59,6 +59,8 @@ jobs:
         run: |
           haxelib setup ~/haxelib
           haxelib install hmm --quiet
+          # Force git to fetch everything properly if it encounters issues
+          git config --global core.compression 0
           haxelib run hmm install
 
       # ── Configure lime for Android ───────────────────────────────────────────
